@@ -10,6 +10,7 @@
     "three": "latest"
   },
   "scripts": {
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack"
   }
 }

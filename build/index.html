@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <style type=text/css>
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        height: 100%;
+      }
+
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0;
+        background-color: #242424;
+      }
+
+      .bottom {
+        position: relative;
+        width: 100%;
+        height: inherit;
+        font-family: sans-serif;
+        font-size: 60px;
+      }
+
+      .counter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        padding: 2px;
+        color: #615f5f;
+      }
+
+      input, select, button, option {
+        font-size: 30px;
+        padding: 10px;
+        border: 0px solid;
+        outline: none;
+        color: #a5a5a5;
+      }
+
+      input {
+        width: 100%;
+        background-color: #333333;
+      }
+
+      select, button, option {
+        font-size: 30px;
+        padding: 10px;
+        border: 0px solid;
+        outline: none;
+        background-color: #242424;
+        color: #a5a5a5;
+        cursor: pointer;
+        opacity: 1;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+
+      .left, .right {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        padding: 20px;
+      }
+
+      .left {
+        text-align: right;
+        color: #2dd4a8;
+      }
+
+      .right {
+        left: 50%;
+        color: #cb825a;
+        background-color: #2b2b2b;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class=top>
+      <div class=controls>
+        <select>
+          <option value=en-ru>en-ru</option>
+
+          <option value=ru-en>ru-en</option>
+        </select>
+
+        <select>
+          <option value=base>base</option>
+
+          <option value=phrasal>phrasal</option>
+        </select>
+
+        <select>
+          <option value=regular>regular</option>
+
+          <option value=reversed>reversed</option>
+
+          <option value=shuffled>shuffled</option>
+
+          <option value=randomized>randomized</option>
+
+          <option value=incorrect>incorrect</option>
+        </select>
+
+        <select>
+          <option value="1 word">1 word</option>
+
+          <option value="all words">all words</option>
+        </select>
+
+        <button>repeat</button>
+
+        <button>go</button>
+
+        <button>run</button>
+      </div>
+
+      <input placeholder=add autofocus>
+
+      <input placeholder=translate>
+    </div>
+
+    <div class=bottom>
+      <div class=left>
+        <div class=counter>
+          <span></span>
+        </div>
+
+        <span></span>
+      </div>
+
+      <div class=right>
+        <span></span>
+      </div>
+    </div>
+  </body>
+
+  <script type=text/javascript src=index.js></script>
+</html>
