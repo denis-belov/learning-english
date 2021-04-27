@@ -184,7 +184,7 @@ input_add.addEventListener('keypress', async (evt) => {
 
 input_translate.addEventListener('keypress', async (evt) => {
   if (evt.keyCode === 13) {
-    console.log((words));
+    // console.log((words));
     const word = words[counter - 1] || words[words.length - 1];
     const word_splitted = word.split(' ');
 
